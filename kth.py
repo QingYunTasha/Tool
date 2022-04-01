@@ -1,5 +1,4 @@
 def kth(arr, k):
-    n=len(arr)
     def quickselect(arr, left, right, k):
         pivot = arr[right]
         i=left
@@ -14,4 +13,4 @@ def kth(arr, k):
             return arr[i]
         else:
             return quickselect(arr, i+1, right, k)
-    return quickselect(arr, 0, n-1, k-1)
+    return quickselect(arr, 0, len(arr)-1, k-1)
