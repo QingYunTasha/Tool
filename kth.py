@@ -13,5 +13,5 @@ def kth(arr, k):
         elif k==i:
             return arr[i]
         else:
-            return quickselect(arr, i+1, right, k-i-1)
+            return quickselect(arr, i+1, right, k)
     return quickselect(arr, 0, n-1, k-1)
